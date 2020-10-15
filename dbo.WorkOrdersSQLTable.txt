@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[WorkOrdersSQLTable] (
+    [First Name]   NVARCHAR (255) NOT NULL,
+    [Last Name]    NVARCHAR (255) NOT NULL,
+    [Company]      NVARCHAR (255) NOT NULL,
+    [Campaign]     NVARCHAR (255) DEFAULT ('') NOT NULL,
+    [Order Name]   NVARCHAR (255) NOT NULL,
+    [Order Type]   NVARCHAR (255) NOT NULL,
+    [Order Number] NVARCHAR (255) NOT NULL,
+    [Status]       NVARCHAR (255) NOT NULL,
+    [Due Date]     NVARCHAR (50)  NOT NULL,
+    [Timestamp]    NVARCHAR (50)  NOT NULL,
+    [Description]  NVARCHAR (255) NOT NULL,
+    [Street]       NVARCHAR (255) NOT NULL,
+    [City]         NVARCHAR (255) NOT NULL,
+    [State]        NVARCHAR (255) NOT NULL,
+    [ZIP]          NVARCHAR (255) NOT NULL,
+    [Images]       IMAGE          NULL,
+    CONSTRAINT [PK_WorkOrdersSQLTable] PRIMARY KEY CLUSTERED ([Order Number] ASC)
+);
+
